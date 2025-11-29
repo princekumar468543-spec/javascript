@@ -80,12 +80,12 @@ rl.question("enter the number",
         }
         rl.close();
     });
-    
+ */
 
     const prompt = require("prompt-sync")();
 
 
-
+/*
  let  a = Number(prompt("enter the first number ="));
  let  b = Number (prompt("enter the second number ="));
  let  c = Number (prompt("enter the third number ="));
@@ -100,11 +100,147 @@ rl.question("enter the number",
     largest = c;
  }
  console.log("this is largest no", + largest);
- */
+ 
 let p = Number(prompt("enter the password"));
 if(p === 1234){
-    console.log("correct password" + p)
+    console.log("correct password =" + p)
 }else{
-    console.log("wrong password" + p)
+    console.log("wrong password =" + p)
 }
 
+
+let  ch =(prompt("Enter the charcter"));
+ if ( 
+    ch === "a"||
+    ch === "e"||
+    ch === "i"||
+    ch ===" o"||
+    ch === "u")
+    {
+    console.log("It,s a vowel " + ch);
+ }else{
+    console.log("It,s a constant" + ch);
+ }
+
+ let status = prompt("enter the status");
+
+if (status.toLowerCase() === "on") {
+
+    console.log("bulb is glowing = " + status);
+} else if (status.toLowerCase() === "off") {
+    console.log("bulb is off = " + status);
+} else {
+    console.log("invalid input");
+}
+
+
+
+let a = Number(prompt("enter the year"));
+let leapyear;
+
+if(a%4===0){
+
+    leapyear = true;
+    console.log("its is leap year =" + leapyear);
+} else{
+    leapyear = false;
+    console.log("it is not leap year =" + leapyear);
+}
+
+
+let b = Number(prompt("Enter the current time"))
+
+if(b<12){
+    console.log("good morning");
+} else if(b<18){
+    console.log("good aftermoon");
+} else {
+    console.log("good Evening");
+}
+
+
+let score = Number(prompt("Enter the score"));
+
+
+
+if(score>90){
+    
+    console.log(" grade is A+ = " + score);
+} else if(score>80){
+    console.log("grade is B+ = " + score);
+}else if(score>70){
+    console.log("grade is  = " + score);   
+}else{
+    console.log("fail = " + score);
+}
+
+
+let ch = (prompt("Enter the your role = "));
+if (ch==="admin"){
+    console.log("Enter your admin email" );
+} else if (ch==="user"){
+    console.log("Enter the user email");
+} else if (ch==="guest"){
+    console.log("Enter the guest email");
+} else{
+    console.log("invalid person");
+}
+
+
+let angle1 = Number(prompt("Enter first angle ="));
+let angle2 = Number(prompt("Enter second angel ="));
+let angle3 = Number(prompt("Enter the third angle ="));
+
+
+if(angle1+angle2+angle3===180){
+    console.log("valid");
+
+}else{
+    console.log("invalid");
+}
+
+
+let salary = Number(prompt("Enter your salary ="));
+
+let tax;
+
+if(salary>50000){
+      tax =  salary*0.10;
+} else{
+    tax = salary*0.05
+}
+console.log("total tax = ",tax);
+
+
+
+let Electricity = Number(prompt("Enter your units"));
+
+let units;
+
+if (Electricity<=100){
+    units = Electricity*5;
+} else if(Electricity<=200){
+    units = Electricity*7;
+}
+
+console.log("it is your bill",units);
+
+
+let attempt  = Number(prompt("Enter the attempt"));
+
+if(attempt>3){
+    console.log("Account locked",attempt);
+}else{
+    console.log("try again",attempt);
+}
+    */
+
+let speed =  Number(prompt("Enter the speed"));
+
+if(speed>100){
+    console.log("overspeed")
+}else if(speed<40){
+    console.log("Slow")
+}else{
+    console.log("Normal")
+}

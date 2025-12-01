@@ -4,7 +4,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-/*
+
 let x = 10;
 
 if (x > 10) {
@@ -80,12 +80,12 @@ rl.question("enter the number",
         }
         rl.close();
     });
- */
+ 
 
     const prompt = require("prompt-sync")();
 
 
-/*
+
  let  a = Number(prompt("enter the first number ="));
  let  b = Number (prompt("enter the second number ="));
  let  c = Number (prompt("enter the third number ="));
@@ -109,17 +109,17 @@ if(p === 1234){
 }
 
 
-let  ch =(prompt("Enter the charcter"));
+let  ch1 =(prompt("Enter the charcter"));
  if ( 
-    ch === "a"||
-    ch === "e"||
-    ch === "i"||
-    ch ===" o"||
-    ch === "u")
+    ch1 === "a"||
+    ch1 === "e"||
+    ch1 === "i"||
+    ch1 ===" o"||
+    ch1 === "u")
     {
-    console.log("It,s a vowel " + ch);
+    console.log("It,s a vowel " + ch1);
  }else{
-    console.log("It,s a constant" + ch);
+    console.log("It,s a constant" + ch1);
  }
 
  let status = prompt("enter the status");
@@ -135,10 +135,10 @@ if (status.toLowerCase() === "on") {
 
 
 
-let a = Number(prompt("enter the year"));
+let a1 = Number(prompt("enter the year"));
 let leapyear;
 
-if(a%4===0){
+if(a1%4===0){
 
     leapyear = true;
     console.log("its is leap year =" + leapyear);
@@ -148,11 +148,11 @@ if(a%4===0){
 }
 
 
-let b = Number(prompt("Enter the current time"))
+let b1 = Number(prompt("Enter the current time"))
 
-if(b<12){
+if(b1<12){
     console.log("good morning");
-} else if(b<18){
+} else if(b1<18){
     console.log("good aftermoon");
 } else {
     console.log("good Evening");
@@ -233,7 +233,7 @@ if(attempt>3){
 }else{
     console.log("try again",attempt);
 }
-    */
+    
 
 let speed =  Number(prompt("Enter the speed"));
 
@@ -243,4 +243,23 @@ if(speed>100){
     console.log("Slow")
 }else{
     console.log("Normal")
+}
+
+
+let weight = Number(prompt("Enter the weight "));
+let heightcm = Number(prompt("Enter the height"))
+
+let heightM = heightcm /100;
+let bmi = weight / heightM*heightM;
+
+console.log("it is your bmi",bmi.toFixed(2));
+
+if (bmi < 18.5) {
+    console.log("category: Underweight",bmi);
+} else if (bmi < 25) {
+    console.log("category: Normal",bmi);
+} else if(bmi < 30){
+    console.log("category: overweight",bmi);
+} else {
+    console.log("category: obese",bmi);
 }

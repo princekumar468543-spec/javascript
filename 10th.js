@@ -1,6 +1,5 @@
 const prompt = require("prompt-sync")();
 
-/*
 let a = Number(prompt("Enter the number one"));
 let b = Number(prompt("Enter the number two"));
 let c = Number(prompt("Enter the number three"));
@@ -141,7 +140,7 @@ if(original === rev){
 } else{
     console.log("It,s not palindrome Number",original)
 }
-    */
+
 
 let phone = (prompt("Enter the phone number"));
 
@@ -150,5 +149,6 @@ if(phone.length === 10 && ["9","8","6","7"].includes(phone[0])&& /^\d{10} $/.tes
 } else{
     console.log("invalid phone number");
 }
+
 
 
